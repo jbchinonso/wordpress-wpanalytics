@@ -2,9 +2,12 @@
 
 namespace App\Controllers;
 
-class HomeController extends BaseController{
+class HomeController extends BaseController
+{
 
-    public function index(){
-        $this->loadView('dashboard', ['title'=>'wpAnalytics']);
+    public function index()
+    {
+        $this->checkLogin();
+        $this->loadView('dashboard', ['title' => 'wpAnalytics']);
     }
 }

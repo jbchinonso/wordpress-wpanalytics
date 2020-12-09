@@ -22,7 +22,7 @@
           </span>
         </div>
         <div class="signout">
-          <a href="/auth/login">
+          <a href="/auth/logout">
             <img src="/images/logout.svg" alt="" />
           </a>
         </div>
@@ -43,6 +43,8 @@
 
         <div class="table--container">
           <h2 class="page--title">Dashboard</h2>
+          <?php require_once 'partials/flashMessages.php'; ?>
+
           <div class="dashboard-body">
             <div class="chartside">
               <div class="charts">
